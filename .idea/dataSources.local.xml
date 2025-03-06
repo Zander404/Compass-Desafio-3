@@ -2,11 +2,20 @@
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-243.24978.46">
     <data-source name="@localhost" uuid="7f557395-ce8a-4db9-bb74-2097d8ca0f9e">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MONGO" />
+      <database-info product="Mongo DB" version="8.0.5" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.20" dbms="MONGO" exact-version="8.0.5" exact-driver-version="1.20" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <auth-provider>MongoDB.SCRAM-SHA-256</auth-provider>
       <user-name>admin</user-name>
-      <schema-mapping />
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="db_event" />
+            <name qname="db_ticket" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
   </component>
 </project>
