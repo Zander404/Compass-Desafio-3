@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="desafio_3@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.53">
+    <root id="1">
+      <ServerVersion>8.0.5</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="config"/>
+    <schema id="4" parent="1" name="desafio_3">
+      <Current>1</Current>
+      <LastIntrospectionLocalTimestamp>2025-03-06.20:48:13</LastIntrospectionLocalTimestamp>
+    </schema>
+    <schema id="5" parent="1" name="local"/>
+    <table id="6" parent="4" name="delete_me"/>
+  </database-model>
+</dataSource>

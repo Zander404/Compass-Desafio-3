@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ms-ticket-manager
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: desafio_3
+      username: root
+      password: example
+      authentication-database: admin
