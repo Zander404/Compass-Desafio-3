@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.53">
+    <root id="1">
+      <ServerVersion>8.0.5</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="config"/>
+    <schema id="4" parent="1" name="db_event">
+      <LastIntrospectionLocalTimestamp>2025-03-06.21:14:14</LastIntrospectionLocalTimestamp>
+    </schema>
+    <schema id="5" parent="1" name="db_ticket">
+      <LastIntrospectionLocalTimestamp>2025-03-06.21:14:14</LastIntrospectionLocalTimestamp>
+    </schema>
+    <schema id="6" parent="1" name="local"/>
+    <table id="7" parent="4" name="delete_me"/>
+    <table id="8" parent="5" name="delete_me"/>
+  </database-model>
+</dataSource>
