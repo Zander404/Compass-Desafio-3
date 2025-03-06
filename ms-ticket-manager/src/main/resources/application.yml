@@ -6,7 +6,7 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: desafio_3
+      database: db_ticket
       username: root
       password: example
       authentication-database: admin
