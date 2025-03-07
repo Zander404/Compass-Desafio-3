@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: ms-ticket-manager
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: db_ticket
+      username: admin
+      password: admin
+      authentication-database: admin
+
+
+  ## Swagger
+springdoc:
+  api-docs:
+    path: /api/v1/docs
+    enabled: true
+
+  swagger-ui:
+    use-root-path: true
+    path: /api/v1/docs
+    paths-to-match: /api/**/v1/**
+    operations-sorter: method
+    tags-sorter: alpha
