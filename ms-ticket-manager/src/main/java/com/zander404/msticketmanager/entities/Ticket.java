@@ -29,4 +29,13 @@ public class Ticket {
     String customerMail;
 
     String eventId;
+
+    String eventName;
+
+    String BRLamount;
+
+    String USDamount;
+
+    String status;
+
 }
