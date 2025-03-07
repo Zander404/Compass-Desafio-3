@@ -7,10 +7,10 @@
     <schema id="2" parent="1" name="admin"/>
     <schema id="3" parent="1" name="config"/>
     <schema id="4" parent="1" name="db_event">
-      <LastIntrospectionLocalTimestamp>2025-03-06.21:14:14</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-03-07.18:26:55</LastIntrospectionLocalTimestamp>
     </schema>
     <schema id="5" parent="1" name="db_ticket">
-      <LastIntrospectionLocalTimestamp>2025-03-06.21:14:14</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-03-07.18:26:55</LastIntrospectionLocalTimestamp>
     </schema>
     <schema id="6" parent="1" name="local"/>
     <table id="7" parent="4" name="delete_me"/>
