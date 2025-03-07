@@ -1,5 +1,6 @@
 package com.zander404.msticketmanager.entities.dto;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,6 +11,8 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonPropertyOrder({"ticketId", "cpf", "customerName", "customerMail", "eventId", "eventName", "brlamount", "usdamount"})
+
 public class TicketCreateDTO implements Serializable {
 
     String ticketId;

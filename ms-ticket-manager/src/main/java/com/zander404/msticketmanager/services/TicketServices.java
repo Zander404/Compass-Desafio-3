@@ -24,15 +24,16 @@ public class TicketServices {
     }
 
     public TicketResponseDTO getTicketById(String ticketId) {
-        Ticket ticket = repository.findById(ticketId).orElseThrow(() -> new RuntimeException());
+        Ticket ticket = repository.findById(ticketId).orElseThrow(() -> new RuntimeException("Ticket not found"));
         return TicketMapper.toTicketResponseDTO(ticket);
     }
 
-    public Ticket create(TicketCreateDTO createDTO) {
+    public TicketResponseDTO create(TicketCreateDTO createDTO) {
 
         try {
             Ticket ticket = TicketMapper.toTicket(createDTO);
-            return repository.save(ticket);
+            repository.save(ticket);
+            return TicketMapper.toTicketResponseDTO(ticket);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

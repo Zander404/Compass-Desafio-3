@@ -1,6 +1,7 @@
 package com.zander404.msticketmanager.entities;
 
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,12 +14,12 @@ import java.util.UUID;
 
 @Data
 @NoArgsConstructor @AllArgsConstructor
-@Document
+@Document(collection = "ticket")
 public class Ticket {
 
 
     @MongoId
-    UUID ticketId = UUID.randomUUID();
+    String ticketId = UUID.randomUUID().toString();
 
     @CPF
     String cpf;

@@ -22,4 +22,6 @@ springdoc:
     use-root-path: true
     path: /api/v1/docs
     paths-to-match: /api/**/v1/**
+    operations-sorter: method
+    tags-sorter: alpha
 
